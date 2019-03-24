@@ -21,9 +21,6 @@ class ListKey extends React.Component {
     }
 
     changeEmployeeName=(id,e)=>{
-
-        console.log(id,e);
-
         const index = this.state.employees.findIndex(emp=>{
             return emp.id===id
         })
