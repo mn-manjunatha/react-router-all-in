@@ -1,45 +1,41 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link, Route } from "react-router-dom";
-import { push } from "connected-react-router";
-
-const Shopping = () => <p>Shopping</p>;
-const Announce = () => <p>Announce</p>;
+import React, { Component } from 'react';
+//import logo from './logo.svg';
+import './App.css';
+import Header from './components/common/Header';
+import Main from './Main';
+import { Prompt } from 'react-router-dom';
 
 class App extends Component {
-  goTo = route => {
-    this.props.dispatch(push(route.url));
-  };
+  state = {
+    logedIn: false
+  }
+
+  loginHandle = () => {
+    this.setState((prevState) => ({
+      logedIn: !prevState.logedIn
+    }))
+  }
 
   render() {
     return (
-      <div>
-        <ul>
-          <li>
-            <Link to="/"> Annonces1 </Link>{" "}
-          </li>
-          <li>
-            <Link to="/shopping"> Shopping </Link>
-          </li>
-        </ul>
-
+      <React.Fragment>
         <div>
-          <button onClick={() => this.goTo({ url: "/shopping" })}>
-            Click here to go shopping ! (if you can...)
-          </button>
+        <button onClick={this.loginHandle.bind(this)}>{this.state.logedIn ? 'log out' : 'log in'}</button>
+          <Header />
+          <Main isLogedin={this.state.logedIn} />
+          <Prompt
+            when={!this.state.isLogedin}
+            message={(location) => {
+              return location.pathname.startsWith('/user') ? 'Are you sure?' : true
+            }}/>
         </div>
-
-        <div style={{ padding: "150px" }}>
-          <Route exact path="/" component={Announce} />
-          <Route path="/shopping" component={Shopping} />
-        </div>
-      </div>
+        
+      </React.Fragment>
     );
   }
 }
 
-const mapStateToProps = store => ({
-  location: store.router.location
-});
 
-export default connect(mapStateToProps)(App);
+//<input type="button" value={this.state.logedIn ? 'log out' : 'log in'} onClick={this.loginHandle.bind(this)}/> 
+
+export default App;
