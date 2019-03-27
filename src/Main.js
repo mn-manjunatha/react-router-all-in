@@ -7,6 +7,8 @@ import Home from './components/about/Home';
 import User from './components/user/User';
 import ListKey from './components/listKey/ListKey';
 import Lifecycle from './components/lifecycle/Lifecycle';
+import PureComponent from './components/pureComponent/PureComponent';
+
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -25,6 +27,8 @@ const Main = ({isLogedin}) => (
       <Route path="/event" strict component={Event}/>
       <Route path="/parentChild" strict component={Parent}/>
       <Route path="/lifecycle" strict component={Lifecycle}/>
+      <Route path="/pureComponent" strict component={PureComponent}/>
+      
       
       <Route path="/listkey" strict component={ListKey}/>
     </Switch>  
