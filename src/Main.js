@@ -9,6 +9,7 @@ import ListKey from './components/listKey/ListKey';
 import Lifecycle from './components/lifecycle/Lifecycle';
 import PureComponent from './components/pureComponent/PureComponent';
 import RefsAndDOM from './components/refs-dom/RefsAndDOM'
+import PropTypesCom from './components/props-type/PropTypes'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -29,8 +30,12 @@ const Main = ({isLogedin}) => (
       <Route path="/lifecycle" strict component={Lifecycle}/>
       <Route path="/pureComponent" strict component={PureComponent}/>
       <Route path="/refsDom" strict component={RefsAndDOM}/>
+      <Route path="/propTypes" strict component={PropTypesCom}/>
       <Route path="/listkey" strict component={ListKey}/>
+
+
     </Switch>  
   </main>
 )
+//PropTypes
 export default Main

@@ -26,6 +26,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/refsDom' exact activeStyle={{color:'green'}}>Refs And DOM</NavLink>
         {" | "}
+        <NavLink to='/propTypes' exact activeStyle={{color:'green'}}>Prop Types</NavLink>
+        {" | "}
         <Link to='/about/'> link about</Link>
     </nav>
   </header>

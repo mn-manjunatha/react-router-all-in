@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Fragment } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Header from './components/common/Header';
@@ -18,7 +18,8 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
+      <div>hi</div>
         <div>
         <button onClick={this.loginHandle.bind(this)}>{this.state.logedIn ? 'log out' : 'log in'}</button>
           <Header />
@@ -29,8 +30,7 @@ class App extends Component {
               return location.pathname.startsWith('/user') ? 'Are you sure?' : true
             }}/>
         </div>
-        
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
