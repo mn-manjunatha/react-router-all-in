@@ -11,6 +11,9 @@ import PureComponent from './components/pureComponent/PureComponent';
 import RefsAndDOM from './components/refs-dom/RefsAndDOM';
 import PropTypesCom from './components/props-type/PropTypes';
 import SampleComponent from './components/higher-order-components/SampleComponent';
+import LazyLoading from './components/lazy-loading/LazyLoading';
+
+
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
 
@@ -35,6 +38,7 @@ const Main = ({isLogedin}) => (
       <Route path="/refsDom" strict component={RefsAndDOM}/>
       <Route path="/propTypes" strict component={PropTypesCom}/>
       <Route path="/higherOrderComponent" strict component={SampleComponent} />
+      <Route path="/lazyLoading" strict component={LazyLoading} />
       
 
       <Route path="/listkey" strict component={ListKey}/>

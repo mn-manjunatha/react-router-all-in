@@ -3,7 +3,6 @@ import Button from './../common/Button';
 
 class SampleComponent extends React.Component {
     constructor(props) {
-        debugger
         super(props);
         this.state = {
             disable: false

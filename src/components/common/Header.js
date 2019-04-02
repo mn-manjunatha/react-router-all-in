@@ -30,6 +30,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/higherOrderComponent' exact activeStyle={{color:'green'}}>Higher Order Component</NavLink>
         {" | "}
+        <NavLink to='/lazyLoading' exact activeStyle={{color:'green'}}>Lazy Loading</NavLink>
+        {" | "}
         <Link to='/about/'> link about</Link>
     </nav>
   </header>
