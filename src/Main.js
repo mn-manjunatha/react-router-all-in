@@ -12,6 +12,7 @@ import RefsAndDOM from './components/refs-dom/RefsAndDOM';
 import PropTypesCom from './components/props-type/PropTypes';
 import SampleComponent from './components/higher-order-components/SampleComponent';
 import LazyLoading from './components/lazy-loading/LazyLoading';
+import Memo from './components/memo/Memo';
 
 
 
@@ -39,6 +40,8 @@ const Main = ({isLogedin}) => (
       <Route path="/propTypes" strict component={PropTypesCom}/>
       <Route path="/higherOrderComponent" strict component={SampleComponent} />
       <Route path="/lazyLoading" strict component={LazyLoading} />
+      <Route path="/memo" strict component={Memo} />
+      
       
 
       <Route path="/listkey" strict component={ListKey}/>

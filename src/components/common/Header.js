@@ -32,6 +32,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/lazyLoading' exact activeStyle={{color:'green'}}>Lazy Loading</NavLink>
         {" | "}
+        <NavLink to='/memo' exact activeStyle={{color:'green'}}>Memo</NavLink>
+        {" | "}
         <Link to='/about/'> link about</Link>
     </nav>
   </header>
