@@ -13,8 +13,7 @@ import PropTypesCom from './components/props-type/PropTypes';
 import SampleComponent from './components/higher-order-components/SampleComponent';
 import LazyLoading from './components/lazy-loading/LazyLoading';
 import Memo from './components/memo/Memo';
-
-
+import ReactRedux from './components/react-redux/ReactRedux';
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
 
@@ -42,6 +41,7 @@ const Main = ({isLogedin}) => (
       <Route path="/lazyLoading" strict component={LazyLoading} />
       <Route path="/memo" strict component={Memo} />
       
+      <Route path="/reactRedux" strict component={ReactRedux} />
       
 
       <Route path="/listkey" strict component={ListKey}/>
