@@ -15,6 +15,10 @@ import LazyLoading from './components/lazy-loading/LazyLoading';
 import Memo from './components/memo/Memo';
 import ReactRedux from './components/react-redux/ReactRedux';
 
+import PuzzlePage from './components/puzzle/PuzzlePage';
+
+
+
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
 
 // The Main component renders one of the three provided
@@ -42,6 +46,9 @@ const Main = ({isLogedin}) => (
       <Route path="/memo" strict component={Memo} />
       
       <Route path="/reactRedux" strict component={ReactRedux} />
+      <Route path="/puzzle" strict component={PuzzlePage} />
+
+      
       
 
       <Route path="/listkey" strict component={ListKey}/>

@@ -1,5 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
+import * as types from '../../actions/actionTypes';
+import * as actionCreator from '../../actions/firstAction';
+
+//import * as types from '../actions/actionTypes';
+
 class ReactRedux extends React.Component {
 
   histroyItem = {
@@ -48,17 +54,18 @@ class ReactRedux extends React.Component {
 
 const mapStateToProps = (store) => {
   return {
-    age: store.age,
-    history: store.history
+    age: store.first.age,
+    history: store.first.history,
+    loading:store.first.loading
   }
 
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onAgeUP: () => dispatch({ type: 'AGE_UP', value: 1 }),
-    onAgeDown: () => dispatch({ type: 'AGE_DOWN', value: 1 }),
-    onDelItem: (id) => dispatch({ type: 'DEL_DOWN', key: id })
+    onAgeUP: () => dispatch(actionCreator.ageUp(1)),
+    onAgeDown: () => dispatch(actionCreator.ageDown(1)),
+    onDelItem: (id) => dispatch(actionCreator.delHIstory(id))
   }
 }
 

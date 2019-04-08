@@ -1,7 +1,4 @@
-const initialState = {
-  age: 21,
-  history: []
-};
+
 
 const reducer = (state = initialState, action) => {
   const newState = { ...state };

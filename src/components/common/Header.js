@@ -36,6 +36,9 @@ const Header = () => (
         {" | "}
         <NavLink to='/reactRedux' exact activeStyle={{color:'green'}}>React Redux</NavLink>
         {" | "}
+        
+
+        
         <Link to='/about/'> link about</Link>
     </nav>
   </header>
@@ -43,3 +46,5 @@ const Header = () => (
   
   export default Header
   
+//   <NavLink to='/puzzle' exact activeStyle={{color:'green'}}>Puzzle</NavLink>
+//          {" | "}
