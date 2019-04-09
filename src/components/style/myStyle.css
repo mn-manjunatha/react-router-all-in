@@ -1,0 +1,12 @@
+/* css style will apply to child component so chanses of conflict */
+.primary{
+    color:orange;
+}
+
+.font-xl{
+    font-size: 50px;
+}
+
+.error{
+    color: red;
+}
