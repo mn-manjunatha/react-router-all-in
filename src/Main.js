@@ -14,8 +14,8 @@ import SampleComponent from './components/higher-order-components/SampleComponen
 import LazyLoading from './components/lazy-loading/LazyLoading';
 import Memo from './components/memo/Memo';
 import ReactRedux from './components/react-redux/ReactRedux';
-
 import PuzzlePage from './components/puzzle/PuzzlePage';
+import Hook from './components/hook/Hook';
 
 
 
@@ -47,13 +47,8 @@ const Main = ({isLogedin}) => (
       
       <Route path="/reactRedux" strict component={ReactRedux} />
       <Route path="/puzzle" strict component={PuzzlePage} />
-
-      
-      
-
+      <Route path="/hook" strict component={Hook} />
       <Route path="/listkey" strict component={ListKey}/>
-
-
     </Switch>  
   </main>
 )

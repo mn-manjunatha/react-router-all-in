@@ -36,6 +36,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/reactRedux' exact activeStyle={{color:'green'}}>React Redux</NavLink>
         {" | "}
+        <NavLink to='/hook' exact activeStyle={{color:'green'}}>Hook</NavLink>
+        {" | "}
         
 
         

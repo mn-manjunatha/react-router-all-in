@@ -21,7 +21,6 @@ export const ageDown = (val) =>
 
 export const delHIstory = (val) =>
 { 
-    alert(val);
     return { type: types.DEL_HISTORY, key: val }
 };
 
