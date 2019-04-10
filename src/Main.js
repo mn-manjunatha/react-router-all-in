@@ -18,6 +18,8 @@ import PuzzlePage from './components/puzzle/PuzzlePage';
 import Hook from './components/hook/Hook';
 import StyleCom from './components/style/StyleCom';
 
+import ErrorCom from './components/error/ErrorCom'
+
 
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
@@ -51,6 +53,8 @@ const Main = ({isLogedin}) => (
       <Route path="/hook" strict component={Hook} />
       <Route path="/style" strict component={StyleCom} />
       <Route path="/listkey" strict component={ListKey}/>
+      <Route path="/errorBoundry" strict component={ErrorCom}/>
+      
     </Switch>  
   </main>
 )

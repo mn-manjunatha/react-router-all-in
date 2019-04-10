@@ -40,6 +40,14 @@ const Header = () => (
         {" | "}
         <NavLink to='/style' exact activeStyle={{color:'green'}}>Style</NavLink>
         {" | "}
+        <NavLink to='/style' exact activeStyle={{color:'green'}}>Context</NavLink>
+        {" | "}
+        <NavLink to='/errorBoundry' exact activeStyle={{color:'green'}}>error Boundry</NavLink>
+        {" | "}
+        <NavLink to='/style' exact activeStyle={{color:'green'}}>Form</NavLink>
+        {" | "}
+        <NavLink to='/style' exact activeStyle={{color:'green'}}>Decorator</NavLink>
+        {" | "}
 
         
         
