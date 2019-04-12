@@ -17,8 +17,10 @@ import ReactRedux from './components/react-redux/ReactRedux';
 import PuzzlePage from './components/puzzle/PuzzlePage';
 import Hook from './components/hook/Hook';
 import StyleCom from './components/style/StyleCom';
+import ErrorCom from './components/error/ErrorCom';
+import Context from './components/context/Context';
 
-import ErrorCom from './components/error/ErrorCom'
+
 
 
 
@@ -54,6 +56,9 @@ const Main = ({isLogedin}) => (
       <Route path="/style" strict component={StyleCom} />
       <Route path="/listkey" strict component={ListKey}/>
       <Route path="/errorBoundry" strict component={ErrorCom}/>
+      <Route path="/context" strict component={Context}/>
+
+      
       
     </Switch>  
   </main>
