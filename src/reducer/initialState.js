@@ -6,4 +6,8 @@ export default {
   puzzle: {
     selectedItem:5
   },
+  lang:{
+    lang:'en'
+  }
+
 };

@@ -19,10 +19,7 @@ import Hook from './components/hook/Hook';
 import StyleCom from './components/style/StyleCom';
 import ErrorCom from './components/error/ErrorCom';
 import Context from './components/context/Context';
-
-
-
-
+import MultiLanguage from './components/multi/MultiLanguage';
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
 
@@ -57,10 +54,8 @@ const Main = ({isLogedin}) => (
       <Route path="/listkey" strict component={ListKey}/>
       <Route path="/errorBoundry" strict component={ErrorCom}/>
       <Route path="/context" strict component={Context}/>
-
-      
-      
-    </Switch>  
+      <Route path="/multi" strict component={MultiLanguage}/>
+    </Switch>
   </main>
 )
 //PropTypes

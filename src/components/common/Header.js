@@ -48,6 +48,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/style' exact activeStyle={{color:'green'}}>Decorator</NavLink>
         {" | "}
+        <NavLink to='/multi' exact activeStyle={{color:'green'}}>Multi Lung</NavLink>
+        {" | "}
 
         
         

@@ -3,6 +3,8 @@ export const AGE_DOWN = 'AGE_DOWN';
 export const DEL_HISTORY = 'DEL_HISTORY';
 export const PUZZLE_SET = 'PUZZLE_SET';
 
+export const CHANGE_LANG= 'CHANGE_LANG';
+
 
 
 

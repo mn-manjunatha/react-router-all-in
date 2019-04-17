@@ -4,18 +4,25 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter } from 'react-router-dom';
-
 import {Provider}  from 'react-redux';
 import {createStore,combineReducers, applyMiddleware } from 'redux';
 //import reducer from './store/reducer';
 import thunk from 'redux-thunk';
-
 import reducerFirst from './reducer/reducerFirst';
 import puzzleReducer from './reducer/puzzleReducer';
+import locale from './reducer/locale';
+//lang
+import {addLocaleData} from 'react-intl';
+import en from 'react-intl/locale-data/en';
+import hi from 'react-intl/locale-data/hi';
+
+addLocaleData(en);
+addLocaleData(hi);
 
 const rootReducer = combineReducers({
   first:reducerFirst,
-  puzzles:puzzleReducer
+  puzzles:puzzleReducer,
+  locale:locale
 
 });
 
