@@ -30,13 +30,25 @@ class MultiLanguage extends React.Component {
             <br/>
             <br/>
             <FormattedMessage id="name" defaultMessage="name" />:
-            <input type="text" />
+            <FormattedMessage id="name" defaultMessage="name">
+              {placeholder=>  
+                <input type="text"  placeholder={placeholder}/>
+                }
+            </FormattedMessage>
             <br/>
             <FormattedMessage id="age" defaultMessage="age" />:
-            <input type="text" />
+            <FormattedMessage id="age" defaultMessage="age">
+              {placeholder=>  
+                <input type="text"  placeholder={placeholder}/>
+                }
+            </FormattedMessage>
             <br/>
             <FormattedMessage id="city" defaultMessage="city" />:
-            <input type="text" />
+            <FormattedMessage id="city" defaultMessage="city">
+              {placeholder=>  
+                <input type="text"  placeholder={placeholder}/>
+                }
+            </FormattedMessage>
           </div>
         </IntlProvider>
       </div>
