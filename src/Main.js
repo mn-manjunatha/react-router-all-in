@@ -20,6 +20,8 @@ import StyleCom from './components/style/StyleCom';
 import ErrorCom from './components/error/ErrorCom';
 import Context from './components/context/Context';
 import MultiLanguage from './components/multi/MultiLanguage';
+import ControlledComponent from './components/form/controlled-component';
+
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
 
@@ -55,7 +57,10 @@ const Main = ({isLogedin}) => (
       <Route path="/errorBoundry" strict component={ErrorCom}/>
       <Route path="/context" strict component={Context}/>
       <Route path="/multi" strict component={MultiLanguage}/>
+      <Route path="/controlCom" strict component={ControlledComponent}/>
     </Switch>
+    
+    
   </main>
 )
 //PropTypes
