@@ -21,6 +21,9 @@ import ErrorCom from './components/error/ErrorCom';
 import Context from './components/context/Context';
 import MultiLanguage from './components/multi/MultiLanguage';
 import ControlledComponent from './components/form/controlled-component';
+import PostList from './components/http/PostList';
+
+
 
 
 //import StaticTypeChecking from './components/static-type-checking/StaticTypeChecking';
@@ -58,6 +61,7 @@ const Main = ({isLogedin}) => (
       <Route path="/context" strict component={Context}/>
       <Route path="/multi" strict component={MultiLanguage}/>
       <Route path="/controlCom" strict component={ControlledComponent}/>
+      <Route path="/http" strict component={PostList}/>
     </Switch>
     
     

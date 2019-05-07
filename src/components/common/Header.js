@@ -52,6 +52,8 @@ const Header = () => (
         {" | "}
         <NavLink to='/controlCom' exact activeStyle={{color:'green'}}>Controlled Component</NavLink>
         {" | "}
+        <NavLink to='/http' exact activeStyle={{color:'green'}}>Http post</NavLink>
+        {" | "}
         <Link to='/about/'> link about</Link>
     </nav>
   </header>
